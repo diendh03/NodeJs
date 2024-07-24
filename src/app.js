@@ -15,7 +15,11 @@ app.use("/api", authRouter);
 app.use("/api", categoryRouter);
 // server
 mongoose.connect(
-  "mongodb+srv://dohuudien:dien29082003@cluster0.ur8okhl.mongodb.net/"
+  "mongodb+srv://dohuudien:dien29082003@cluster0.ur8okhl.mongodb.net/",
+  {
+    dbName: "test",
+    autoCreate: true,
+  }
 );
 export const viteNodeApp = app;
 
