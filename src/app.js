@@ -14,7 +14,9 @@ app.use("/api", productRouter);
 app.use("/api", authRouter);
 app.use("/api", categoryRouter);
 // server
-mongoose.connect("mongodb://127.0.0.1:27017/we17307");
+mongoose.connect(
+  "mongodb+srv://dohuudien:dien29082003@cluster0.ur8okhl.mongodb.net/"
+);
 export const viteNodeApp = app;
 
 // npm i vite vite-plugin-node -D
