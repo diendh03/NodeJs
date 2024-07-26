@@ -26,7 +26,7 @@ app.listen(8080, () => {
   console.log(`Server is running on port ${PORT}`);
 });
 
-export const viteNodeApp = app;
+// export const viteNodeApp = app;
 
 // npm i vite vite-plugin-node -D
 // tạo file vite.config.js
