@@ -11,8 +11,8 @@ const router = express.Router();
 
 router.get("/categories", getAllCate);
 router.get("/categories/:id", getCateById);
-router.post("/categories/add", checkPermission, createCate);
+router.post("/categories", checkPermission, createCate);
 router.delete("/categories/:id", checkPermission, removeCate);
-router.patch("/categories/update/:id", checkPermission, updateCate);
+router.patch("/categories/:id", checkPermission, updateCate);
 
 export default router;
